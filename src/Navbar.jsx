@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export default function Navbar() {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
     { path: "/", label: "Home" },
@@ -15,7 +17,17 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-title">E-Portfolio</div>
-      <div className="nav-links">
+
+      {/* Mobile Toggle Button */}
+      <button
+        className="hamburger-button"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <img src="/e6.svg" alt="Menu" className="hamburger-icon" />
+      </button>
+
+      {/* Links */}
+      <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         {navItems.map((item) => (
           <Link
             key={item.path}
@@ -23,6 +35,7 @@ export default function Navbar() {
             className={`nav-link ${
               location.pathname === item.path ? "active" : ""
             }`}
+            onClick={() => setMenuOpen(false)}
           >
             {item.label}
           </Link>

@@ -351,3 +351,35 @@ img {
     padding: 0.6rem 1.2rem;
   }
 }
+
+/* 📱 NAVBAR HAMBURGER STYLING   */
+
+.hamburger-button {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  height: 32px;
+  width: 32px;
+}
+
+/* Mobile behavior */
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
