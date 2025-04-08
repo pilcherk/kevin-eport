@@ -30,6 +30,15 @@ export default function LeadershipStyles() {
           <button onClick={nextSlide}>Next &rarr;</button>
         </div>
       </div>
+      
+      <a
+        href="/LeadershipStyles.pptx"
+        download
+        className="press-button"
+      >
+        Download Slide Deck (PPTX)
+      </a>
+
     </div>
   );
 }
