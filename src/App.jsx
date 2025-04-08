@@ -1,30 +1,25 @@
-// 📁 src/App.jsx
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./pages/Home";
 import LeadershipStyles from "./pages/LeadershipStyles";
 import LeadershipTraining from "./pages/LeadershipTraining";
-import StrategicPlanning from "./pages/StrategicPlanning";
 import Motivation from "./pages/Motivation";
 import Contact from "./pages/Contact";
-import './styles/global.css';
+import MotivationSWOT from "./pages/MotivationSWOT"; // ✅ Updated import
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Navbar />
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/leadership-styles" element={<LeadershipStyles />} />
-          <Route path="/leadership-training" element={<LeadershipTraining />} />
-          <Route path="/strategic-planning" element={<StrategicPlanning />} />
-          <Route path="/motivation" element={<Motivation />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/leadership-styles" element={<LeadershipStyles />} />
+        <Route path="/leadership-training" element={<LeadershipTraining />} />
+        <Route path="/motivation" element={<Motivation />} />
+        <Route path="/motivation-swot" element={<MotivationSWOT />} /> {/* ✅ Updated route */}
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </Router>
   );
 }
-
-export default App;

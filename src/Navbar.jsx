@@ -9,8 +9,9 @@ export default function Navbar() {
     { path: "/", label: "Home" },
     { path: "/leadership-styles", label: "Leadership Styles" },
     { path: "/leadership-training", label: "Leadership Training" },
-    { path: "/strategic-planning", label: "Strategic Planning" },
     { path: "/motivation", label: "Motivation" },
+    { path: "/motivation-swot", label: "Motivation SWOT" },
+    
     { path: "/contact", label: "Contact" },
   ];
 

@@ -1,34 +1,25 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-
-Modal.setAppElement("#root"); // Important for accessibility
+import React from "react";
 
 export default function Motivation() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
   return (
-    <div>
+    <div className="content">
       <h2>Enhancing Motivation in the U.S. Air Force</h2>
-      <p>This research paper explores morale and retention using motivation theory.</p>
+      <p>
+        This research-based paper integrates multiple motivation theories—including Maslow's, ERG, Two-Factor,
+        Expectancy, and Reinforcement Theory—to propose a multifaceted strategy for improving morale and
+        retention in the military. It emphasizes fair leadership, personal value, and recognition as key to
+        engagement.
+      </p>
 
-      <button onClick={() => setModalIsOpen(true)} className="download-button">
-        View Paper
-      </button>
-
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
-        contentLabel="PDF Viewer"
-        className="modal-content"
-        overlayClassName="modal-overlay"
+      <a
+        href="/Motivation.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="view-pdf-button"
       >
-        <button onClick={() => setModalIsOpen(false)} className="close-button">✖</button>
-        <iframe
-          src="/Motivation.pdf"
-          title="Motivation Paper"
-          className="pdf-viewer"
-        ></iframe>
-      </Modal>
+        View Full Paper
+      </a>
+
     </div>
   );
 }
