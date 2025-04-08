@@ -1,11 +1,4 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-
-Modal.setAppElement("#root");
-
 export default function StrategicPlanning() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
   return (
     <div className="content">
       <h2>Strategic Planning and Leadership</h2>
@@ -15,25 +8,14 @@ export default function StrategicPlanning() {
         facilitating the process, and using dialogue.
       </p>
 
-      <button onClick={() => setModalIsOpen(true)} className="download-button">
-        View Paper
-      </button>
-
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
-        contentLabel="Strategic Planning PDF"
-        className="modal-content"
-        overlayClassName="modal-overlay"
+      <a
+        href="/StrategicPlanning.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="download-button"
       >
-        <button onClick={() => setModalIsOpen(false)} className="close-button">✖</button>
-
-        <iframe
-          src="/StrategicPlanning.pdf"
-          title="Strategic Planning PDF"
-          className="pdf-viewer"
-        ></iframe>
-      </Modal>
+        View Full Paper
+      </a>
     </div>
   );
 }
