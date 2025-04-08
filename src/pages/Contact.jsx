@@ -2,18 +2,21 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8 space-y-6">
-      <h2 className="text-3xl font-bold">Contact Me</h2>
-      <p className="text-gray-200">
-        You can find my full contact details and professional background in my resume below.
+    <div className="content">
+      <h2>My Resume</h2>
+      <p>
+        Below is a visual copy of my professional resume. You can also download the full PDF version at the bottom.
       </p>
-      <iframe
-        src="/KevinPilcherResume.pdf"
-        width="100%"
-        height="600"
-        title="Resume PDF"
-        className="border rounded-lg shadow"
-      ></iframe>
+
+      <div className="resume-images">
+        <img src="/resume1.jpeg" alt="Resume Page 1" />
+        <img src="/resume2.jpeg" alt="Resume Page 2" />
+      </div>
+
+      <a href="/KevinPilcherResume.pdf" download className="press-button">
+        Download Full Resume (PDF)
+      </a>
+
     </div>
   );
 }

@@ -12,11 +12,11 @@ export default function MotivationSWOT() {
         href="/MotivationSWOT.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="view-pdf-button"
+        className="press-button"
       >
         View Full Paper
       </a>
-      
+
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function Motivation() {
         href="/Motivation.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="view-pdf-button"
+        className="press-button"
       >
         View Full Paper
       </a>
