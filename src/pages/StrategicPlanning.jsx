@@ -1,18 +1,10 @@
 import React, { useState } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import Modal from "react-modal";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+Modal.setAppElement("#root");
 
 export default function StrategicPlanning() {
-  const [showPDF, setShowPDF] = useState(false);
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-    setPageNumber(1);
-  }
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
     <div className="content">
@@ -23,44 +15,25 @@ export default function StrategicPlanning() {
         facilitating the process, and using dialogue.
       </p>
 
-      <button onClick={() => setShowPDF(true)} className="download-button">
+      <button onClick={() => setModalIsOpen(true)} className="download-button">
         View Paper
       </button>
 
-      {showPDF && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <button onClick={() => setShowPDF(false)} className="close-button">✖</button>
-            <Document
-              file="/StrategicPlanning.pdf"
-              onLoadSuccess={onDocumentLoadSuccess}
-            >
-              <Page
-                pageNumber={pageNumber}
-                width={window.innerWidth > 768 ? 800 : 300}
-              />
-            </Document>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        contentLabel="Strategic Planning PDF"
+        className="modal-content"
+        overlayClassName="modal-overlay"
+      >
+        <button onClick={() => setModalIsOpen(false)} className="close-button">✖</button>
 
-            <div className="carousel-controls" style={{ marginTop: "1rem" }}>
-              <button
-                onClick={() => setPageNumber((prev) => Math.max(prev - 1, 1))}
-                disabled={pageNumber <= 1}
-              >
-                Previous
-              </button>
-              <span>
-                Page {pageNumber} of {numPages}
-              </span>
-              <button
-                onClick={() => setPageNumber((prev) => Math.min(prev + 1, numPages))}
-                disabled={pageNumber >= numPages}
-              >
-                Next
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+        <iframe
+          src="/StrategicPlanning.pdf"
+          title="Strategic Planning PDF"
+          className="pdf-viewer"
+        ></iframe>
+      </Modal>
     </div>
   );
 }
