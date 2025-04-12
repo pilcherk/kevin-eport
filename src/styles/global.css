@@ -55,11 +55,12 @@ a {
   margin-bottom: 2rem;
 }
 
-.about-text {
+.about-text p {
   color: #e0e0e0;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
+
 
 /* NAVBAR */
 
