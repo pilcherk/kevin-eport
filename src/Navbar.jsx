@@ -24,7 +24,7 @@ export default function Navbar() {
         className="hamburger-button"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        <img src="/e6.svg" alt="Menu" className="hamburger-icon" />
+        <img src="/favicon.png" alt="Menu" className="hamburger-icon" />
       </button>
 
       {/* Links */}
