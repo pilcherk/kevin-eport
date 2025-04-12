@@ -9,7 +9,7 @@ export default function Home() {
       <section>
         <h2 className="section-title">About Me</h2>
         <p className="about-text">
-        I’m Kevin J. Pilcher, a Non-Commissioned Officer in the United States Air Force with over a decade of service, and a graduating senior earning my Bachelor of Arts in Management with a concentration in Leadership from American Military University. My leadership journey has been shaped by the high standards of military service, a relentless drive for personal growth, and a firm belief that people—not just systems—are the key to mission success.
+        I’m Kevin J. Pilcher—a Non-Commissioned Officer in the United States Air Force with over a decade of service, a graduating senior earning my Bachelor of Arts in Management with a concentration in Leadership from American Military University, and most importantly, a husband and father to three beautiful young children. Everything I do is ultimately for them. My leadership journey has been shaped by the high standards of military service, a relentless drive for personal growth, and a firm belief that people—not just systems—are the key to mission success.
 
         Throughout my career, I've led teams in high-pressure environments, enforced standards others might overlook, and mentored peers through complex challenges. My leadership philosophy is built around discipline, accountability, and self-improvement. I believe that structure enables innovation, that the small things matter, and that a leader’s first responsibility is to their people—both in their development and in their well-being.
 
