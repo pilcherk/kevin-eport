@@ -9,10 +9,13 @@ export default function Home() {
       <section>
         <h2 className="section-title">About Me</h2>
         <p className="about-text">
-          I’m a U.S. Air Force E6 with 11 years of service, committed to leading with integrity,
-          upholding standards, and developing others. I’ve led in operational, strategic, and instructional roles—
-          mentoring Airmen and building high-performance teams. Outside of uniform, I'm a family man who values
-          loyalty, growth, and balance.
+        I’m Kevin J. Pilcher, a Non-Commissioned Officer in the United States Air Force with over a decade of service, and a graduating senior earning my Bachelor of Arts in Management with a concentration in Leadership from American Military University. My leadership journey has been shaped by the high standards of military service, a relentless drive for personal growth, and a firm belief that people—not just systems—are the key to mission success.
+
+        Throughout my career, I've led teams in high-pressure environments, enforced standards others might overlook, and mentored peers through complex challenges. My leadership philosophy is built around discipline, accountability, and self-improvement. I believe that structure enables innovation, that the small things matter, and that a leader’s first responsibility is to their people—both in their development and in their well-being.
+
+        What sets me apart is a principled mindset rooted in objective truth and unflinching integrity. I approach every challenge with a clear moral compass, ensuring that my actions align with both mission success and ethical standards—while course-correcting quickly when I fall short, as we all do at times. Whether guiding junior Airmen, facilitating team cohesion, or analyzing strategic organizational behavior, I remain focused on what matters most: integrity, accountability, and continuous improvement.
+
+        This e-portfolio showcases not only my academic achievements and applied leadership skills, but also the mindset I bring to every role I take on—one that values growth, excellence, and service beyond self.
         </p>
       </section>
 
