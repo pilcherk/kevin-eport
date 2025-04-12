@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <h1 className="home-title">Kevin J. Pilcher's E-Portfolio</h1>
-      <p className="home-subtitle">Disciplined. Accountable. Committed to people.</p>
+      <p className="home-subtitle">Disciplined. Accountable. Committed.</p>
 
       <section>
         <h2 className="section-title">About Me</h2>
