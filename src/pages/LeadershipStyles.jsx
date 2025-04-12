@@ -12,8 +12,7 @@ export default function LeadershipStyles() {
     <div className="content">
       <h2>Leadership Styles and When to Use Them</h2>
       <p>
-        This visual presentation explores six key leadership styles—Coercive, Authoritative, 
-        Affiliative, Democratic, Pace-Setting, and Coaching—with real-world military examples.
+      In this presentation, I explore six foundational leadership styles—Coercive, Authoritative, Affiliative, Democratic, Pace-Setting, and Coaching—and break down when and how to apply each one. I used real-world scenarios to connect theory to practice, showing how context, team dynamics, and mission urgency affect which style is most effective. This artifact reflects my belief that strong leaders don’t rely on just one approach—they adapt based on what their people and the mission require. It highlights my ability to assess situations critically and lead intentionally, a skill that’s become second nature through my years as an NCO.      
       </p>
 
       <div className="slide-carousel">

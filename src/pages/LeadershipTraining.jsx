@@ -12,9 +12,7 @@ export default function LeadershipTraining() {
     <div className="content">
       <h2>Leadership Training for NCOs in the U.S. Air Force</h2>
       <p>
-        This presentation outlines key leadership theories including Trait, Skills, Behavioral, 
-        Situational, and Path-Goal. It’s tailored to help Non-Commissioned Officers lead and 
-        mentor within the Air Force environment.
+      This training presentation was designed as a development tool for myself and other NCOs in the Air Force. I walk through key leadership theories—Trait, Skills, Behavioral, Situational, and Path-Goal—and explain how each one applies to real challenges we face. I incorporated Air Force doctrine and focused heavily on actionable best practices like cultivating self-awareness, being adaptable, and building trust. This project reflects how I lead every day—by investing in people, thinking critically, and constantly looking for ways to grow and help others do the same. It reinforces my commitment to mentorship, development, and high standards.      
       </p>
 
       <div className="slide-carousel">

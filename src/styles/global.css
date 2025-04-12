@@ -415,3 +415,46 @@ img {
     right: 0;
   }
 }
+
+/* Motivation Image */
+
+.motivation-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.motivation-image {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;      /* Adjust this to make the image wider/narrower */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;     /* These two lines center the image */
+  margin-right: auto;
+}
+
+
+/* SWOT Image */
+
+.swot-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.swot-image {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;      /* Adjust this to make the image wider/narrower */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;     /* These two lines center the image */
+  margin-right: auto;
+}
+
+
